@@ -22,8 +22,13 @@ section.section-intro h2 {
 section.section-intro h3 {
   color: #fafac8;
   font-size: 1.4em;
-  text-align: center;
+  text-align: left;
+  margin-left: 0.5em;
   margin-top: 0.5em;
+}
+
+a.smaller-text  {
+  font-size: 0.8em;
 }
 
 a.uri {

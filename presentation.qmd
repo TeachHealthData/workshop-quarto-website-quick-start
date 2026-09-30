@@ -13,61 +13,58 @@ format:
     slide-number: true
 ---
 
+## Plan for today
 
-## Before we start
+- 🎬 Use a __Template__ to create a code repository
+- 🦄 Configure the website to automatically get __deployed/published__
+- 🚀 Make your first website edits and watch it being updated 
+- 🛠 Setup RStudio so that you can work on your portfolio in the future
+
+### Things you will need:
 
 - GitHub account
 - R + RStudio installed
 
+## Start quickly with a Template {.section-intro}
 
-## Plan for today
+### This time, instead of starting from scratch, we prepared a starting code for you 🎬
 
-- Create a repo from a __template__
-- Configure __automatic deployment__
-- Make your first edit to __trigger a build__
-- Copy locally 
-- Push local changes to trigger another build
-
-
-## Get Starter Template {.section-intro}
-
-![](images/GitHub_Invertocat_White.png){width=45% fig-align='center'}
+![](images/GitHub_Invertocat_White.png){width=35% fig-align='center'}
 
 
 ## Copy the template
 
 Find the Template repo for creating skills/experience portfolio at:
 
-<https://github.com/TeachHealthData/workshop-portfolio-template>
+<https://github.com/TeachHealthData/workshop-quarto-website-quick-start-CODE>{.smaller-text .uri}
 
 ![](images/new-repo-from-template.png){width=100%}
 
+1. Find and click the [Use this template]{.big-green-button} button
+2. Select `Create a new repository`
 
-Find and click the [Use this template]{.big-green-button} button
+## Give your code repository a meaningful name
 
-
-## Name your code repository
-
-Chose the name carefully. For example if your GitHub username is `jmcvw` and you call your repo something silly like `CyberNinja420`:
+e.g. if your GitHub username is `jmcvw` and your repo is called `CyberNinja420`:
 
 You **code** will live under this address:
 
 :::{.highlight-tip}
-[github.com/jmcvw/[CyberNinja420]{style='color: #2e9a40; font-weight: bold;'}]{style='font-family: monospace;'}
+[github.com/[jmcvw]{style='color: #222222; font-weight: bold;'}/[CyberNinja420]{style='color: #2e9a40; font-weight: bold;'}]{style='font-family: monospace;'}
 :::
 
 You **public website** will live under this address:
 
 :::{.highlight-tip}
-[jmcvw.github.io/[CyberNinja420]{style='color: #2e9a40; font-weight: bold;'}]{style='font-family: monospace;'}
+[[jmcvw]{style='color: #222222; font-weight: bold;'}.github.io/[CyberNinja420]{style='color: #2e9a40; font-weight: bold;'}]{style='font-family: monospace;'}
 :::
 
-And to make your GitHub page appear as your **account home page**...
+But to make your portfolio your **main profile page**... you need to call it `jmcvw.github.io` (with the `.github.io` bit, where `jmcvw` is your username).
 
-But if you call it exactly `jmcvw.github.io` (with the `.github.io` bit). Now your **account public website** will be:
+Now your **account public website** will be simply:
 
 :::{.highlight-tip}
-[[jmcvw.github.io]{style='color: #2e9a40; font-weight: bold;'}]{style='font-family: monospace;'}
+[[jmcvw]{style='color: #222222; font-weight: bold;'}.github.io]{style='font-family: monospace;'}
 :::
 
 So much shorter, so much prettier!!!
@@ -101,8 +98,12 @@ Copilot may add extra files that interfere with the automated build process
 - You're ready to click the big green button [Create repository]{.big-green-button}
 
 :::{.fragment .highlight-success}
-You now have your own website repository 👏
+Congratulations. You now have your own copy of the portfolio starting code.
+
+**Next:** Let's have a peek what's inside 👏
+
 :::
+
 
 ## What's in the template?
 
@@ -115,12 +116,15 @@ GitHub Actions will handle everything automatically on every push
 :::
 
 
-## Tell GitHub How to Publish {.section-intro}
+## Set up your website publishing in GitHub{.section-intro}
 
+### Template gave us all the code, but we need to set some things by hand.
+
+### Once it's done, your website will update automatically whenever you make a change 🦄
 
 ## Change `Pages` settings {#scroller .scrollable}
 
-Go to the `Settings` tab in the GitHub website navigation. If your screen is small, it might be hidden under [...]
+Go to your new repository on GitHub. In the top navigation find `Settings`. If your screen is small, it might be hidden under [...] on the right.
 
 ![](images/navbar-settings.png)
 
@@ -139,27 +143,33 @@ Where are two ways to deploy:
 :::{.column .fragment width='40%'}
 **Branches:** (Default) This gives you less control but may be simpler to set up (e.g. if you're pushing pre-rendered HTML files)
 
-![](images/deploy-from-branch.png)
+![](images/deploy-from-branch.png)![](images/down-arrow.png){width=5% .align-to-top }
+
 :::
 
 :::{.column .fragment width='40%'}
 **Actions:** You specifically program what should happen when new code is pushed. We've set it up for you already in the starting code for this workshop **[Choose this]**
 
-![](images/deploy-from-actions.png)
+![](images/deploy-from-actions.png)![](images/down-arrow.png){width=5% .align-to-top }
+
 :::
 :::
 
 
-## Make changes online {.section-intro}
+## First edit - first deployment {.section-intro}
 
+### You are ready to make your first contribution to your portfolio
+
+### Since making any change triggers re-publishing process... your portfolio will go live 🚀
 
 ## Where's our website... is it Published yet?
 
 Since the website gets refreshed every time you make a change... let's make a change (any change) so that it gets published. Technical term is that changing something __triggers__ the `Build Actions`.
 
-So let's make a small change in the `About` page of your new website. Click the __about.qmd__ file.
+So let's use the **simplified GitHub web interface** to make a small change in the `About` page of your new website. On the website of your git repository, click the __about.qmd__ file.
 
-![](images/about-select.png)
+![](images/about-select.png)![](images/down-arrow.png){width=5% .align-to-top }
+
 
 ## Edit a .qmd file and commit your changes
 
@@ -203,10 +213,9 @@ Your change has triggered an automatic publishing action 🙌
 :::
 :::
 
+## GitHub Magic 🦄🚀 {.section-intro}
 
-## GitHub Magic 🦄 {.section-intro}
-
-### Changes to your website code will automatically be published to the web (but it will take a few minutes)
+### Watch live how the changes you just made triggered the refresh of your public portfolio
 
 ![](images/actions-workflow.png){width='80%' fig-align=center top=100}
 
@@ -280,7 +289,7 @@ Hooray, we are ready to move to RStudio 🎉
 :::
 
 
-## Setting up your RStudio {.section-intro}
+## Setting up your RStudio 🛠 {.section-intro}
 
 ### What has RStudio ever given us?
 
@@ -335,8 +344,7 @@ You will see something like this in console, and immediately a website will open
 
 Scroll down to see all options, and when done, click [Generate Token]{.big-green-button} at the bottom
 
-![](images/github-create-pat.png)
-![](images/down-arrow.png){.flat .absolute top=620 right=10 width=5%}
+![](images/github-create-pat.png){width=} ![](images/down-arrow.png){width=5% .align-to-top }
 
 ## You will now see your token. Copy it.
 
@@ -400,21 +408,20 @@ First get the 'official' url of your websote
 Then add it to the RStudio (so that it knows where to copy things from)
 
 :::{.r-stack}
-![](images/repo-url-code-button.png)
+![](images/repo-url-code-button.png){.fragment .current-visible} ![](images/down-arrow.png){width=5% .align-to-top }
 
-![](images/rstudio-repo-url-1.png){.fragment}
+![](images/rstudio-repo-url-1.png){.fragment .current-visible}
 
-![](images/rstudio-repo-url-2.png){.fragment}
-:::
-
+![](images/rstudio-repo-url-2.png){.fragment .current-visible}
+::: 
 
 ## Make changes locally {.section-intro}
 
-### It's time to confirm everything works in your RStudio: make a change and see it published
+### It's time to confirm everything works in your RStudio: make a change and see it published 🛠🚀
 
 ## Let's edit one of the files in your portfolio
 
-- As before, make an edit to our `about.qmd` file
+- As before, make an edit to our `about.qmd` file, but this time do it in RStudio
 - Then go to RStudio's __Git__ tab (top right)
 - And enter the __Commit__ dialog
 
@@ -422,22 +429,48 @@ Then add it to the RStudio (so that it knows where to copy things from)
 
 ## You're ready to commit and push your changes
 
-This process you will repeat many times a day, and will become very familiar:
+In the future you will repeat this process many times a day, so it's good to become familiar with it:
 
-- Select Files you want to commit
-- Write a short Commit message
-- Click __Commit__ and then __Push__
+:::{.columns}
+:::{.column width='50%'}
 
+
+:::{.fragment data-fragment-index=0}
+1. **Select Files** you want to commit
+2. Write a short **message**
+3. Click **Commit**
+:::
+
+:::{.fragment data-fragment-index=1}
+4. Send it online by clicking __Push__
+:::
+
+:::{.fragment data-fragment-index=2}
+5. You will see a confirmation. You can __Close__ this panel.
+:::
+:::
+
+:::{.column width='50%'}
 :::{.r-stack}
-![](images/rstudio-commit-changes-1.png){.fragment .current-visible}
 
-![](images/rstudio-push.png){.fragment .current-visible}
+:::{.fragment .current-visible data-fragment-index=0}
+![](images/rstudio-commit-changes-1.png)
+:::
 
-![](images/rstudio-push-success.png){.fragment .current-visible}
+:::{.fragment .current-visible data-fragment-index=1}
+![](images/rstudio-push.png)
+:::
+
+:::{.fragment .current-visible data-fragment-index=2}
+![](images/rstudio-push-success.png)
+:::
+
+:::
+:::
+:::
 
 :::{.fragment .highlight-success}
 When you click `Push` the "Build Pages" action is triggered 🎊
-:::
 :::
 
 
@@ -451,7 +484,7 @@ Give it a minute - the Action may still be running
 
 - Your portfolio website is live at `your-username.github.io/repo-name`
 - Whenever you push a new change, website gets republished 
-- You have a live preview[^local-preview-in-rstudio] of your local version in RStudio, so you know how it will look once you push it. 
+- You have a **live preview[^local-preview-in-rstudio]** of your local version in RStudio, so you know how it will look once you push it. 
 
 [^local-preview-in-rstudio]: To see the preview find and click a __Render__ button. It's on top middle and has a blue arrow next to it.
 
