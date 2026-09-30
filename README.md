@@ -1,2 +1,3 @@
 # workshop_quarto_website_github_pages
-test
+
+<https://teachhealthdata.github.io/workshop-quarto-website-quick-start/>
