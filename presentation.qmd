@@ -3,6 +3,7 @@ title: 'GitHub Pages Portfolio'
 subtitle: 'Quick Setup'
 format:
   revealjs:
+    output-file: index.html
     fontsize: 2rem
     menu: false
     buttons: false
@@ -284,13 +285,14 @@ Follow steps below to get these things done quickly...
 
 ## To create the GitHub Token
 
-Run this code in RStudio Console. It will open a very specific part of the GitHub where you will be able to request your token.  
+Run this code in RStudio Console. It will open a very specific part of the GitHub where you will be able to request your token.
 
-```
+```r
 install.packages(c('usethis', 'gitcreds'))
 usethis::create_github_token()
 gitcreds::gitcreds_set()
 ```
+
 When you run it in your RStudio console, two things will happen:
 
 - a specific section of GitHub website will open. We'll start with that.
@@ -340,7 +342,7 @@ Once this is done, we can contine on our fun adventure or creating a website.
 In RStudio, we can create a new project directly from our Git repo
 
 :::{.columns}
-:::{.column }
+:::{.column}
 
 - Choose __Create Project__ from __Version Control__
 
@@ -391,11 +393,11 @@ Then add it to the RStudio (so that it knows where to copy things from)
 ## Commit and push 
 
 :::{.r-stack}
-![](images/rstudio-commit-changes-1.png){.fragment}
-
-![](images/rstudio-commit-changes-2.png){.fragment}
+![](images/rstudio-commit-changes-1.png)
 
 ![](images/rstudio-push.png){.fragment}
+
+![](images/rstudio-push-success.png){.fragment}
 :::
 
 :::{.fragment .highlight-success}
