@@ -46,23 +46,37 @@ Find the Template repo for creating skills/experience portfolio at:
 Find and click the [Use this template]{.big-green-button} button
 
 
+## Name your code repository
 
-## Name your repo 
+Chose the name carefully. For example if your GitHub username is `jmcvw` and you call your repo something silly like `CyberNinja420`:
 
-- The name you choose will be your final website URL  
+You **code** will live under this address:
 
 :::{.highlight-tip}
-[your-username.github.io/[repo-name]{style='color: #2e9a40; font-weight: bold;'}]{style='font-family: monospace;'}
+[github.com/jmcvw/[CyberNinja420]{style='color: #2e9a40; font-weight: bold;'}]{style='font-family: monospace;'}
 :::
 
-- So choose something appropriately professional
+You **public website** will live under this address:
+
+:::{.highlight-tip}
+[jmcvw.github.io/[CyberNinja420]{style='color: #2e9a40; font-weight: bold;'}]{style='font-family: monospace;'}
+:::
+
+And to make your GitHub page appear as your **account home page**...
+
+But if you call it exactly `jmcvw.github.io` (with the `.github.io` bit). Now your **account public website** will be:
+
+:::{.highlight-tip}
+[[jmcvw.github.io]{style='color: #2e9a40; font-weight: bold;'}]{style='font-family: monospace;'}
+:::
+
+So much shorter, so much prettier!!!
 
 :::{.r-stack}
 ![](images/name-repo-1.png)
 
 ![](images/name-repo-2.png){.fragment}
 :::
-
 
 ## Make it public
 
@@ -84,14 +98,11 @@ Copilot may add extra files that interfere with the automated build process
 
 ## Now we create the repo
 
-- Big green button
-
-![](images/create-repo-btn.png){width=100%}
+- You're ready to click the big green button [Create repository]{.big-green-button}
 
 :::{.fragment .highlight-success}
 You now have your own website repository 👏
 :::
-
 
 ## What's in the template?
 
@@ -109,35 +120,23 @@ GitHub Actions will handle everything automatically on every push
 
 ## Change `Pages` settings {#scroller .scrollable}
 
-Find the `Settings` tab in the main nav bar
+Go to the `Settings` tab in the GitHub website navigation. If your screen is small, it might be hidden under [...]
 
-:::{.r-stack}
-![](images/navbar.png)
+![](images/navbar-settings.png)
 
-![](images/navbar-settings.png){.fragment}
-:::
+Then scroll down to `Pages` section on the bottom left.
 
-:::{.columns .fragment}
-:::{.column}
-Now scan down the sidebar till you see `Pages`
-
-![](images/down-arrow.png){.flat .absolute top=620 right=120 width=5%}
-:::
-
-:::{.column}
 ![](images/sidebar-pages.png)
-:::
-:::
-
+![](images/down-arrow.png){width=5% .align-to-top }
 
 ## Choose the publish method
 
-This is the last setup step: now all changes to your code will be deployment (published) to the web.
+Publishing means that all of the changes to your code will be automatically deployment (published) to the web.
 
 Where are two ways to deploy:
 
 :::{.columns}
-:::{.column width='40%'}
+:::{.column .fragment width='40%'}
 **Branches:** (Default) This gives you less control but may be simpler to set up (e.g. if you're pushing pre-rendered HTML files)
 
 ![](images/deploy-from-branch.png)
@@ -154,102 +153,117 @@ Where are two ways to deploy:
 ## Make changes online {.section-intro}
 
 
-## Where's our website...?
+## Where's our website... is it Published yet?
 
-In order to __trigger__ the `Build Actions` we have to make a change to our content
+Since the website gets refreshed every time you make a change... let's make a change (any change) so that it gets published. Technical term is that changing something __triggers__ the `Build Actions`.
 
-Let's update our `About` page
+So let's make a small change in the `About` page of your new website. Click the __about.qmd__ file.
 
 ![](images/about-select.png)
 
-## Edit and commit
+## Edit a .qmd file and commit your changes
 
-<!-- //TODO: remake these images, so they are not so wide -->
+Follow these steps:
 
-To edit a file on GitHub
+:::{.columns}
+:::{.column width='60%'}
 
-- Click the Pencil icon
-- Type changes in the edit window
-- Then click [Commit changes]{.big-green-button}
+1. Click the __Pencil__ icon in top right to open file editing view.
 
-:::{.r-stack}
-:::{.fragment .current-visible}
-![](images/about-edit.png){.absolute top=350 left=0}
+:::{.fragment data-fragment-index=1}
+2. Change something in the file and click [Commit changes]{.big-green-button}.
 :::
-:::{.fragment .current-visible}
-![](images/about-change-and-commit.png){.absolute top=350 left=0}
-:::
-:::{.fragment .current-visible}
-![](images/about-commit-message.png){.absolute top=100 left=520}
-:::
+
+:::{.fragment data-fragment-index=2}
+3. You will be asked to write a short meaningful message which describes what you've just added (commited)
 :::
 
 :::{.fragment .highlight-success}
-Commit (save) -> Automatic build process triggered 🙌
+Your change has triggered an automatic publishing action 🙌
+:::
+
+:::
+
+:::{.column width='40%'}
+:::{.r-stack}
+
+:::{.fragment .current-visible data-fragment-index=0}
+![](images/about-edit.png)
+:::
+
+:::{.fragment .current-visible data-fragment-index=1}
+![](images/about-change-and-commit.png)
+:::
+
+:::{.fragment .current-visible data-fragment-index=2}
+![](images/about-commit-message.png)
+:::
+
+:::
+:::
 :::
 
 
-## GitHub Magic {.section-intro}
+## GitHub Magic 🦄 {.section-intro}
+
+### Changes to your website code will automatically be published to the web (but it will take a few minutes)
 
 ![](images/actions-workflow.png){width='80%' fig-align=center top=100}
 
-## To see the magic
+## Watch the publishing process 🦄 happen live:
 
-Return to `main` page (if your not already there)
+Return to the __Code__ part of the GitHub website navigation
 
 ![](images/navbar-code.png)
 
-:::{.columns .fragment}
-:::{.column}
-And notice the wee yellow dot
-:::
+Try to find[^if-yellow-dot-not-there] and click a wee orange dot ![](images/yellow-dot.png)
 
-:::{.column}
-![](images/yellow-dot.png)
-:::
-:::
+[^if-yellow-dot-not-there]: If you don't see the dot, check in the __Actions__ part of the navigation 
+
+\
 
 :::{.columns .fragment}
 :::{.column}
-You can click it...
+You will be able to see live progress of your website being built 🟠 🔜 ✅  
 :::
 
 :::{.column}
 :::{.r-stack}
-![](images/checks-pending-1.png)
+![](images/checks-pending-1.png){.fragment .current-visible}
 
-![](images/checks-pending-2.png){.fragment}
+![](images/checks-pending-2.png){.fragment .current-visible}
 
-![](images/checks-success.png){.fragment}
-:::
-:::
-:::
+![](images/checks-success.png){.fragment .current-visible}
 
 :::{.fragment .highlight-success}
-You now have a website!! 🎉
+You now have a published website! 🎉
+
+:::
+:::
+:::
 :::
 
+## But where is it? Find your website address
 
-## Find your website address
-
-- Once the Action is complete you will have a website
-- But where is it?
+How to be sure exactly what's the **public URL link** where others can see your website?
 
 :::{.columns}
 :::{.column .fragment}
-Right hand side
+
+1. Return to the __Code__ part of the GitHub website navigation.
+
+2. Go to the editing of __About__ section (wee cog ⚙️ icon).
 
 ![](images/about-description-cog.png)
 :::
 
 :::{.column .fragment}
+
+3. Tick an option: __Use your GitHub Pages website__
+
+4. Here you'll see yout portfolio's public URL link
+
 ![](images/about-description-url.png)
-:::
-
-:::{.fragment .highlight-tip .absolute top=500}
-__Bookmark this__
-
-...it's your portfolio URL to share
 :::
 :::
 
@@ -257,21 +271,31 @@ __Bookmark this__
 
 ### Great work, so far:
 
-- you have created your quarto website. Code for it lives on GitHub.
-- you have set up the deployment/publishing. Whenever you make change in quarto code, your updated goes live on the internet automatically.
-- you have seen it work. You used the simple code editor on GitHub website to make a change, and watched that changebe published.
+- 🎬 **you have created your quarto website**. Code for it lives on GitHub.
+- 🦄 **you have set up the deployment/publishing**. Whenever you make change in quarto code, your updated goes live on the internet automatically.
+- 🚀 **you have seen it work**. You used the simple code editor on GitHub website to make a change, and watched that change be published.
 
-### Next we will set up up your RStudio, so that:
-
-- you have a live preview of how your website will look even before you publish it
-- you have more suitable tools for editing and adding files
+:::{.fragment .highlight-success}
+Hooray, we are ready to move to RStudio 🎉
+:::
 
 
 ## Setting up your RStudio {.section-intro}
 
+### What has RStudio ever given us?
+
 :::{div}
 ![](images/rslogo.png){width=80% fig-align="center"}
 :::
+
+## Next we will set up your RStudio
+
+What has RStudio ever given us?
+
+- **Live preview of website changes you are working on**. It's great to know how your website will look even before you publish it.
+- **Proper tool to edit many code files and manage folders**. Messy file names and folder structures can get out of hand quickly. RStudio is great at keeping things tidy.
+- **Overview of your GitHub situation: commits, changes, etc.**. RStudio Git panel is very helpful once you get your head around it.
+
 
 ## How to connect your GitHub account with your RStudio  
 
@@ -284,7 +308,7 @@ This next set of steps is least pleasant in the whole workshop, but don't worry,
 - Create a special **'token'** on GitHub page which will allows RStudio to make changes to repository
 - Put this token into your Rstudio, so that it remembers it for the next time.
 
-Follow thethe steps below to get these things done quickly...
+Follow the steps below to get these things done quickly...
 
 ## To create the GitHub Token
 
@@ -386,54 +410,53 @@ Then add it to the RStudio (so that it knows where to copy things from)
 
 ## Make changes locally {.section-intro}
 
+### It's time to confirm everything works in your RStudio: make a change and see it published
 
-## Edit your About page
+## Let's edit one of the files in your portfolio
 
-- As before, we'll make an edit to our `about.qmd` file
+- As before, make an edit to our `about.qmd` file
+- Then go to RStudio's __Git__ tab (top right)
+- And enter the __Commit__ dialog
 
 ![](images/rstudio-change-about.png)
 
+## You're ready to commit and push your changes
 
-## Commit and push 
+This process you will repeat many times a day, and will become very familiar:
+
+- Select Files you want to commit
+- Write a short Commit message
+- Click __Commit__ and then __Push__
 
 :::{.r-stack}
-![](images/rstudio-commit-changes-1.png)
+![](images/rstudio-commit-changes-1.png){.fragment .current-visible}
 
-![](images/rstudio-push.png){.fragment}
+![](images/rstudio-push.png){.fragment .current-visible}
 
-![](images/rstudio-push-success.png){.fragment}
-:::
+![](images/rstudio-push-success.png){.fragment .current-visible}
 
 :::{.fragment .highlight-success}
 When you click `Push` the "Build Pages" action is triggered 🎊
 :::
+:::
 
 
-## Go check it out...
+## That's it. Go check it out...
 
-- A live portfolio website at `your-username.github.io/repo-name`
-- Automatic rebuilds on every push
-- A local development workflow in RStudio
-
-Go back to GitHub, and click the link you configured earlier
+You can now go back to GitHub, and click the link you configured earlier
 
 :::{.highlight-tip}
 Give it a minute - the Action may still be running
 :::
 
-## You are all set up now! 
+- Your portfolio website is live at `your-username.github.io/repo-name`
+- Whenever you push a new change, website gets republished 
+- You have a live preview[^local-preview-in-rstudio] of your local version in RStudio, so you know how it will look once you push it. 
 
-### In the previous steps you've:
+[^local-preview-in-rstudio]: To see the preview find and click a __Render__ button. It's on top middle and has a blue arrow next to it.
 
-- set up your page
-- made a small change to your page
-- you have see your change go live.
+**Coming Next:** Making your own portfolio
 
-### Coming Next: Making your own portfolio
-
-- add you pictures
-- add description about yourself
-- use markdown to make it prettier and readable
 
 ## Time to make your own portfolio (your turn)
 
@@ -454,7 +477,8 @@ This is the end of materials for this workshop. Now it is your turn. Working in 
 
 :::{.highlight-tip}
 After each change make a commit and push (so that you see it live and get in the habit of using git)
-:::
+::: 
+![](images/down-arrow.png){width=5% .align-to-top }
 
 1. Add your name and position **[then COMMIT and PUSH]**
 1. Add your profile photo on the main page **[then COMMIT and PUSH]**

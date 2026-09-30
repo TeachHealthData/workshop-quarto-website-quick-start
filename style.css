@@ -19,6 +19,13 @@ section.section-intro h2 {
   margin-top: 0.5em;
 }
 
+section.section-intro h3 {
+  color: #fafac8;
+  font-size: 1.4em;
+  text-align: center;
+  margin-top: 0.5em;
+}
+
 a.uri {
   color: #004f71;
   text-decoration: underline;
@@ -70,6 +77,10 @@ img.flat {
   gap: 1em;
   align-items: flex-start;
   width: 100%;
+}
+
+.align-to-top {
+  vertical-align: top
 }
 
 .reveal .columns .column {
