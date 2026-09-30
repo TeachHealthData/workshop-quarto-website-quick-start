@@ -85,3 +85,11 @@ img.flat {
   font-size: 2rem;
   padding: 4px 10px;
 }
+.gh-tab {
+  background-color: black;
+  border: solid 4px #4494fb;
+  border-radius: 10px;
+  color: white;
+  padding: 4px 10px;
+}
+
