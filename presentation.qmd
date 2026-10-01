@@ -1,6 +1,6 @@
 ---
-title: 'GitHub Pages Portfolio'
-subtitle: 'Quick Setup'
+title: 'Build a Portfolio using Quarto Website hosted on GitHub Pages - Part 2: Quick Start'
+subtitle: 'By John Wilson and Pawel Orzechowski. Edinburgh Medical School. University of Edinburgh.'
 format:
   revealjs:
     output-file: index.html
